@@ -38,6 +38,111 @@ blockquote, q {
 
 /*universal styling*/
 
-
+*{
+    box.sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    border:1px solid grey;
+}
 
 /*general styling*/
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:1.5rem;
+    line-height:1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    font-size:4.5rem;
+}
+
+h2{
+    font-size:2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+/*header styling*/
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav h1{
+    width:25%;
+    padding-left:5%;
+}
+
+.links{
+    width:40%;
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.links a{
+    background-color: lightblue;
+    padding:2%;
+    margin:2%;
+    width:10%;
+}
+
+/*top section styling*/
+.top{
+    height:70vh;
+    background-image: url('https://picsum.photos/500?grayscale');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-attachment:scroll;
+    background-position:center;
+    margin:2%;
+}
+
+.intro{
+    margin:10% auto;
+    text-align:center;
+    color:#fff;
+}
+
+/*projects section styling*/
+
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+}
+
+.projects img{
+    width:30%;
+}
+
+/*contact section styling*/
+
+.contactinfo {
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+}
+
+.contactinfo h2{
+    width:20%;
+}
