@@ -52,9 +52,10 @@ html{
 }
 
 body{
-    font-size:1.5rem;
+    font-size:2rem;
     line-height:1.5;
     font-family: 'Noto Sans JP', sans-serif;
+    background-color:paleturquoise;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -79,6 +80,7 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items:center;
+    color:mintcream;
 }
 
 nav h1{
@@ -94,48 +96,55 @@ nav h1{
 }
 
 .links a{
-    background-color: lightblue;
+    background-color:lightseagreen;
     padding:2%;
     margin:2%;
-    width:10%;
+    width:15%;
+    border-radius: 10px;
+    color:mintcream;
 }
 
 /*top section styling*/
 .top{
-    height:70vh;
-    background-image: url('https://picsum.photos/500?grayscale');
+    height:60vh;
+    width:50%;
+    background-image: url('https://picsum.photos/700?grayscale');
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-attachment:scroll;
-    background-position:center;
-    margin:2%;
+    background-position:top;
+    margin:2% auto;
+    text-align: center;
 }
 
 .intro{
-    margin:10% auto;
+    margin:0 auto;
+    padding-top:20%;
     text-align:center;
-    color:#fff;
+    color:mintcream;
 }
 
 /*projects section styling*/
 
 .projects{
+    width:80%;
     display:flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
     padding-bottom: 3%;
+    margin:0 auto;
 }
 
 .projects img{
-    width:30%;
+    width:40%;
 }
 
 /*contact section styling*/
 
 .contactinfo {
     width:80%;
-    margin:0 auto;
+    margin:0 auto 2% auto;
     display:flex;
     justify-content: space-evenly;
     align-items:center;
@@ -144,4 +153,8 @@ nav h1{
 
 .contactinfo h2{
     width:20%;
+}
+
+.contactinfo a{
+    font-size: 2.5rem;
 }
