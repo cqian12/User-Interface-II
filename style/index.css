@@ -39,10 +39,11 @@ blockquote, q {
 /*universal styling*/
 
 *{
-    box.sizing:border-box;
+    box-sizing:border-box;
     margin:0;
     padding:0;
     max-width:100%;
+    border:1px solid grey;
 }
 
 /*general styling*/
@@ -63,11 +64,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-    font-size:4.5rem;
+    font-size:5rem;
 }
 
 h2{
-    font-size:2.5rem;
+    font-size:3.5rem;
 }
 
 a{
@@ -97,8 +98,7 @@ nav h1{
 
 .links a{
     background-color:lightseagreen;
-    padding:2%;
-    margin:2%;
+    padding:2% 1%;
     width:15%;
     border-radius: 10px;
     color:mintcream;
@@ -127,7 +127,8 @@ nav h1{
 /*projects section styling*/
 
 .projects{
-    width:80%;
+    width:100%;
+    padding:0 5%;
     display:flex;
     flex-wrap: wrap;
     text-align: center;
@@ -157,4 +158,19 @@ nav h1{
 
 .contactinfo a{
     font-size: 2.5rem;
+}
+
+/*responsive styles*/
+
+@media(max-width:800px) {
+ /*no adjustments needed*/   
+}
+
+@media(max-width:800px) {
+    nav{
+        justify-content: center;
+    }
+    nav h1{
+        width:80%;
+    }
 }
